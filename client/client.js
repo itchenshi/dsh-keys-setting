@@ -1,4 +1,4 @@
-// dsh-composer-keys-setting — client (browser) half.
+// dsh-keys-setting — client (browser) half.
 //
 // Two jobs:
 //
@@ -24,7 +24,7 @@
 // (`isComposing` / keyCode 229), so Chinese/Japanese input is unaffected.
 
 window.__ModuleLoader__.load({
-  id: 'dsh-composer-keys-setting',
+  id: 'dsh-keys-setting',
   factory: (require) => {
     const React = require('react')
     const jsx = require('react/jsx-runtime')

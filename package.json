@@ -1,5 +1,5 @@
 {
-  "name": "dsh-composer-keys-setting",
+  "name": "dsh-keys-setting",
   "version": "0.2.0",
   "description": "DeepSeek Harness plugin: choose whether Enter, Shift+Enter and Ctrl/Cmd+Enter send the message or insert a line break, from the Settings window's General page.",
   "type": "module",
@@ -43,11 +43,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/itchenshi/dsh-composer-keys-setting.git"
+    "url": "git+https://github.com/itchenshi/dsh-keys-setting.git"
   },
-  "homepage": "https://github.com/itchenshi/dsh-composer-keys-setting#readme",
+  "homepage": "https://github.com/itchenshi/dsh-keys-setting#readme",
   "bugs": {
-    "url": "https://github.com/itchenshi/dsh-composer-keys-setting/issues"
+    "url": "https://github.com/itchenshi/dsh-keys-setting/issues"
   },
   "publishConfig": {
     "access": "public"

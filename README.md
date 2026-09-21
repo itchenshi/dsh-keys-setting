@@ -1,4 +1,4 @@
-# dsh-composer-keys-setting
+# dsh-keys-setting
 
 在 **DSH 设置窗口 → 通用** 里配置输入框的快捷键：**Enter / Shift+Enter / Ctrl+Enter（macOS 为 ⌘）
 各自设为「发送消息」或「换行」**。
@@ -75,8 +75,8 @@ composer-keys:
 
 ```yaml
 - insert:
-    - id: composer-keys
-      name: dsh-composer-keys-setting
+    - id: composer-keys        # 行 id 与包名解耦，刻意保持不变（见下）
+      name: dsh-keys-setting
       config:
         enabled: true    # false 时完全不加载（既不注册路由也不加设置行）
 ```
@@ -84,15 +84,20 @@ composer-keys:
 ## 安装
 
 ```sh
-dsh plugin --profile web add dsh-composer-keys-setting
+dsh plugin --profile web add dsh-keys-setting
 ```
 
 装完**重启 `dsh web`**（或重开 DSH GUI），设置窗口「通用」页最下方即可看到
 「输入框快捷键」。在 DSH GUI 里也可以在「设置窗口 → 第三方插件」里勾选同一个包。
 
-> 包名里的 `-setting` 后缀是**必需的**：`dsh-composer-keys` 在 npm 上已被其他
-> 作者占用（同名同义的另一个实现）。后缀只影响安装时写的包名，与功能无关。
-> 升级到本包由 DSH GUI 的启动维护自动完成，并保留你原来的启用/禁用选择。
+> **关于包名**：本插件最初叫 `dsh-composer-keys`，但那个名字在 npm 上已被其他作者
+> 占用，现在的包名是 `dsh-keys-setting`。
+>
+> **行 id 与设置命名空间仍是 `composer-keys`，这是刻意的**：补丁层的禁用行、市场
+> `state.json` 里的开关，以及 `settings.yaml` 里你保存的键位都记在这个名字下。
+> 包名只是安装时用的标识，改它不该让你已有的键位设置或启用/禁用选择失效。
+>
+> 升级由 DSH GUI 的启动维护自动完成（旧包名会被摘掉、禁用选择会被搬到新包上）。
 
 ## 设置行样式（沿用通用页）
 

@@ -1,4 +1,4 @@
-// dsh-composer-keys-setting local behaviour tests (no network, no engine, no DOM).
+// dsh-keys-setting local behaviour tests (no network, no engine, no DOM).
 // Run: node tests/test.mjs
 
 import assert from 'node:assert/strict'
@@ -28,7 +28,7 @@ globalThis.KeyboardEvent = class KeyboardEvent {
 await import('../client/client.js')
 assert.equal(registrations.length, 1, 'bundle must register exactly one factory')
 const registration = registrations[0]
-assert.equal(registration.id, 'dsh-composer-keys-setting', 'factory id must be the package name')
+assert.equal(registration.id, 'dsh-keys-setting', 'factory id must be the package name')
 
 const clientExports = registration.factory((specifier) => {
   if (specifier === 'react' || specifier === 'react/jsx-runtime') {

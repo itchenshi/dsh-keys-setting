@@ -1,4 +1,9 @@
-# dsh-composer-keys-setting layer.
+# dsh-keys-setting layer.
+#
+# The row `id` stays `composer-keys` on purpose: it is the identity the profile's
+# patch layer and the marketplace state.json have recorded for the user's
+# enable/disable choice since the plugin shipped, and it is independent of the
+# package name. Renaming the package must not orphan that choice.
 #
 # Mounts this plugin's halves:
 #   - host  (lib/index.js):   owns the preference in the engine's settings
@@ -14,4 +19,4 @@
 # else — `packageRowIds` only ever sees the inserted row below.)
 - insert:
     - id: composer-keys
-      name: dsh-composer-keys-setting
+      name: dsh-keys-setting
