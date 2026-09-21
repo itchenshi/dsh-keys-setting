@@ -6,7 +6,7 @@
 ```
 设置 → 通用
   ┌──────────────────────────────────────────────────────────┐
-  │ 输入框快捷键                                              │
+  │ 按键设置                                                  │
   │ 设置 Enter / Shift+Enter / Ctrl+Enter 是发送消息还是换行   │
   │                                    Enter       [发送消息 ▾] │
   │                                    Shift+Enter [换行     ▾] │
@@ -88,7 +88,7 @@ dsh plugin --profile web add dsh-keys-setting
 ```
 
 装完**重启 `dsh web`**（或重开 DSH GUI），设置窗口「通用」页最下方即可看到
-「输入框快捷键」。在 DSH GUI 里也可以在「设置窗口 → 第三方插件」里勾选同一个包。
+「按键设置」。在 DSH GUI 里也可以在「设置窗口 → 第三方插件」里勾选同一个包。
 
 > **关于包名**：本插件最初叫 `dsh-composer-keys`，但那个名字在 npm 上已被其他作者
 > 占用，现在的包名是 `dsh-keys-setting`。

@@ -204,7 +204,7 @@ window.__ModuleLoader__.load({
 
     const zhDict = {
       __lang: 'zh-CN',
-      title: '输入框快捷键',
+      title: '按键设置',
       desc: '设置 Enter / Shift+Enter / Ctrl+Enter 是发送消息还是换行（macOS 上 Ctrl 为 ⌘）',
       gestureEnter: 'Enter',
       gestureShiftEnter: 'Shift + Enter',
@@ -215,7 +215,7 @@ window.__ModuleLoader__.load({
     }
     const enDict = {
       __lang: 'en-US',
-      title: 'Composer shortcuts',
+      title: 'Key bindings',
       desc: 'Choose whether Enter / Shift+Enter / Ctrl+Enter sends the message or inserts a line break (⌘ on macOS)',
       gestureEnter: 'Enter',
       gestureShiftEnter: 'Shift + Enter',
