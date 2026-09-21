@@ -241,7 +241,7 @@ window.__ModuleLoader__.load({
     // declaring engine client packages in `dsh.client.inject` re-registers whole
     // bundles (a known footgun), and the module loader rejects externals
     // requested before its boot.
-    const STYLE_ID = 'dsh-composer-keys-style'
+    const STYLE_ID = 'dsh-keys-setting-style'
     const ROW_CSS = [
       '.dsh-ck-row{border-bottom:.5px solid var(--dsw-alias-border-l2);align-items:flex-start;gap:8px;padding:16px 0;display:flex}',
       '.dsh-ck-rowText{flex-direction:column;flex:1;gap:4px;min-width:0;padding-right:48px;display:flex}',

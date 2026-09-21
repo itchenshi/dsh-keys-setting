@@ -80,7 +80,7 @@ function check(label, fn) {
 /** Build a keydown-like object. */
 const key = (over = {}) => ({ key: 'Enter', shiftKey: false, ctrlKey: false, metaKey: false, altKey: false, isComposing: false, keyCode: 13, ...over })
 
-console.log('dsh-composer-keys tests\n--- host: shared preference helpers ---')
+console.log('dsh-keys-setting tests\n--- host: shared preference helpers ---')
 
 check('DEFAULTS mirror the engine keymap', () => {
   assert.deepEqual(DEFAULTS, { enter: 'send', shiftEnter: 'newline', ctrlEnter: 'send' })
@@ -262,7 +262,7 @@ check('row + control styling mirror the engine settings rows', () => {
     assert.ok(itemRule.includes(decl), `menu item must declare ${decl}`)
   }
   assert.ok(ROW_CSS.includes('.dsh-ck-check{'), 'the selected item needs its check glyph')
-  assert.equal(STYLE_ID, 'dsh-composer-keys-style')
+  assert.equal(STYLE_ID, 'dsh-keys-setting-style')
 })
 
 check('client fallbacks agree with the host defaults', () => {
